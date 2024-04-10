@@ -1,0 +1,56 @@
+{% extends "Rostr/layout.html" %}
+
+{% block body %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 text-center">
+            <button class="btn mt-5 green-button" id="previous-button">
+                <
+            </button>
+            <button class="btn mt-5 green-button" id="dateselector"> Select start of the week </button>
+            <button class="btn mt-5 green-button" id="next-button">
+                >
+            </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12" style ="max-width:100%" id="sched-container">
+            <table class="table" id="sched-table">
+
+                <thead></thead>
+
+                <tbody></tbody>
+
+            </table>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="shift-modal" tabindex="-1" aria-labelledby="shift-modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-3" id="modal-title">Set Shift</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <form action="{% url 'shifts' %}" method="post">
+                <div class="modal-body">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="delete-button">Delete</button>
+                    <button type="submit" class="btn green-button">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
