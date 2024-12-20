@@ -16,10 +16,13 @@
 #### How to run locally
 1. Clone the repository.
 2. Install dependencies:
+   
    pip install -r requirements.txt
-3. Set up the database:
+4. Set up the database:
+   
    python manage.py migrate
-4. Run the development server:
+6. Run the development server:
+   
    python manage.py runserver
 
 #### Deployment
