@@ -2,6 +2,9 @@
 
 #### Video Demo: https://youtu.be/G2NV0U9wkws?si=gLFQWPj6MTs4SmPK
 
+#### How to run:
+-The project is hosted in Python Anywhere: https://lumino.pythonanywhere.com
+
 #### Description:
 
 Rostr is a web app for organizations to manage their members' daily work schedule. It enables managers/admin to create, edit, or delete shifts, and employees to view their and other staff's shifts. Members are automatically notified of changes in their schedule via email.
@@ -41,7 +44,6 @@ layout.html.
 
 
 
-#### How to run:
--The project is hosted in Python Anywhere: https://lumino.pythonanywhere.com
+
 
 
