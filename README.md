@@ -2,7 +2,7 @@
 
 ## Table of Contents
 1. [Video Demo](#video-demo)
-2. [How to Run](#how-to-run)
+2. [How to Run](#how-to-run-locally)
 3. [Deployment](#deployment)
 4. [Description](#description)
 5. [Features](#features)
