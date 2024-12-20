@@ -1,0 +1,28 @@
+{% extends "Rostr/layout.html" %}
+{% block body_class %}hide-navbar{% endblock %}
+
+{% block body %}
+
+    {% if message %}
+        <div>{{ message }}</div>
+    {% endif %}
+
+    <div class="container-fluid my-auto py-5 text-center">
+        <img src="/static/Rostr/logo.png" class="img-fluid mx-auto mb-3 d-block" style="width:50%;" alt="logo">
+        <form action="{% url 'login' %}" method="post">
+            {% csrf_token %}
+            <div class="form-group col-4 mx-auto p-2">
+                <input autofocus class="form-control" type="text" name="username" placeholder="Username">
+            </div>
+            <div class="form-group col-4 mx-auto p-2">
+                <input class="form-control" type="password" name="password" placeholder="Password">
+            </div>
+            <input class="btn btn-primary" type="submit" value="Login">
+        </form>
+    </div>
+
+    <div class="col-4 mx-auto p-2 text-center">
+        Don't have an account? <a href="{% url 'register' %}">Register here.</a>
+    </div>
+
+{% endblock %}
