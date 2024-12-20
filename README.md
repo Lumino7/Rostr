@@ -8,22 +8,6 @@ Rostr is a web app for organizations to manage their members' daily work schedul
 
 The project was created to address conflicts in work schedule, especially in healthcare. There are times when employees show up at work, only to find out that they are off because there has been some changes and they were just not informed. Rostr aims to minimize these problems by ensuring that staff are notified of every change in their shift. It also allows employees to view their schedule in real time, and eliminates the dependency for paper rosters.
 
-
-
-#### Distinctiveness and Complexity:
-
-This project is based on the project I submitted for CS50x with the same name, which utilized Flask, Jinja, and SQLite. For this version of the app, I overhauled my project to use the Django web framework instead, along with it's features such as models, model forms, Django templating, and it's database management system. Also, this time, web content is generated dynamically using Javascript. I also added some UI features such as modals and toasts.
-
-The app is powered by:
--500+ lines of code in Javascript, containing 15 functions with multiple event listeners and element creators.
--200+ lines in Python views.py, including handlers for GET, POST, PATCH and DELETE requests.
--2 Django models with custom methods.
--Custom CSS styling.
-
-Rostr's purpose, functionality and UI layout is different from the previous projects I made in CS50w. I also implemented functionalities that I didnt do before, such as manipulating modals and toasts in Javascript, creating and assigning a favicon, using Django's email functionality, and modifying/customizing models and form methods.
-
-
-
 #### Files:
 The file structure was automatically created using Django create app and create project.
 Added/modified files:
@@ -58,6 +42,6 @@ layout.html.
 
 
 #### How to run:
--The project is not yet deployed in a web hosting service, so currently it can be run in the VSCode terminal. In the app's root folder, run the command: python manage.py runserver
+-The project is hosted in Python Anywhere: https://lumino.pythonanywhere.com
 
 
